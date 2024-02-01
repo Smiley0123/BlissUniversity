@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COURSES</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- --------header section--------- -->
+
+    <section class="sub-header">
+        <nav>
+            <a href="home.html"><img class="logo" src="./image/logo.jpg" alt="logo of the University"></a>
+
+            <div class="nav-div">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="aboutus.html">About</a></li>
+                    <li><a href="course.html">Course</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+
+        </nav>
+        <div class="a-us">
+            <h1>Our Courses</h1>
+        </div>
+    </section>
+
+    <!-- --------Course---------- -->
+    <section class="Course">
+        <h1>Course we offer</h1>
+        <p>Bliss university provides so many full-time as well as part-time courses.</p>
+        <div class="rows">
+            <!-- <div class="blockslide"> -->
+            <div class="course-col">
+                <h3>diploma studies</h3>
+                <p>Diploma courses are typically shorter in duration compared to traditional degree programs. This
+                    allows students to enter the workforce more quickly and start gaining practical experience.</p>
+            </div>
+            <div class="course-col">
+                <h3>bachelor degree</h3>
+                <p>Bachelor's programs provide in-depth education and knowledge in a specific field of study. Students
+                    gain a comprehensive understanding of the subject, allowing them to develop expertise and critical
+                    thinking skills.</p>
+            </div>
+            <!-- </div> -->
+            <!-- <div class="blockslide"> -->
+            <div class="course-col">
+                <h3>post graduation</h3>
+                <p>Post-graduate education provides an opportunity for individuals to switch careers or specialize in a
+                    specific area. It allows professionals to pivot to a different field or gain in-depth knowledge in
+                    their current field of work.</p>
+            </div>
+
+        </div>
+
+
+
+    </section>
+
+
+    <!-- ------------course list--------------- -->
+
+    <section class="allcourse">
+        <h2>COURSES SEARCH</h2>
+        <form action="" class="course-search">
+            <div class="option-course">
+                <div class="op">
+                    <button class="visit-btn red-btn search" onclick="showclasslist()">All <i
+                            class="fa fa-caret-down"></i></button>
+
+
+                    <ul class="list-course">
+
+                        <li><a href="">All courses</a></li>
+                        <li><a href="">Diploma Courses</a></li>
+                        <li><a href="">Bachelor degree Courses</a></li>
+                        <li><a href="">Post-graduate Courses</a></li>
+                        <li><a href="">Part-time Courses</a></li>
+                        <li><a href="">Full-time Courses</a></li>
+                    </ul>
+                </div>
+                <label for="c-search"></label>
+                <input id="c-search" class="search" type="text" placeholder="SEARCH" list="suggestions">
+                <datalist id="suggestions"></datalist>
+                <button class="search" type="submit"><i class="fa fa-search"></i></button>
+
+            </div>
+            <!-- <div id="suggestionsContainer" class="suggestions"></div> -->
+            <div class="fields">
+                <div class="fields-col" id="fields-col1">
+                    <!-- <div> -->
+                    <img src="./image/art&culture.jpeg" alt="Art & Culture">
+                    <h3>Art & Culture</h3>
+                </div>
+                <div class="course-list" id="course-list1">
+                    <ul>
+                        <li><a href="">Acting</a></li>
+                        <li><a href="">Animation</a></li>
+                        <li><a href="">Dance</a></li>
+                        <li><a href="">Fashion</a></li>
+                        <li><a href="">Film Production</a></li>
+                        <li><a href="">Music</a></li>
+                        <li><a href="">Photography</a></li>
+                        <li><a href="">Writing</a></li>
+                    </ul>
+                </div>
+                <!-- </div> -->
+                <div class="fields-col" id="fields-col2">
+                    <img src="./image/agri.jpg" alt="Agriculture, Animal & Related Practices">
+                    <h3>Agriculture, Animal & Related Practices</h3>
+                </div>
+                <div class="course-list" id="course-list2">
+                    <ul>
+                        <li><a href="">Agriculture</a></li>
+                        <li><a href="">Animal Care</a></li>
+                        <li><a href="">Equine</a></li>
+                        <li><a href="">Horticulture / Landscaping</a></li>
+                        <li><a href="">Veterinary</a></li>
+                        <li><a href="">Wine / Viticulture</a></li>
+                    </ul>
+                </div>
+                <div class="fields-col" id="fields-col3">
+                    <img src="./image/business.jpg" alt="Business, Finance & Administration">
+                    <h3>Business, Finance & Administration</h3>
+                </div>
+                <div class="course-list" id="course-list3">
+                    <ul>
+                        <li><a href="">Accounting</a></li>
+                        <li><a href="">Advertising</a></li>
+                        <li><a href="">Business</a></li>
+                        <li><a href="">Communications</a></li>
+                        <li><a href="">Customer Service / Help Desk</a></li>
+                        <li><a href="">E-Commerce</a></li>
+                        <li><a href="">Entrepreneurship / Small Business</a></li>
+                        <li><a href="">Event Management / Planning</a></li>
+                        <li><a href="">Finance</a></li>
+                        <li><a href="">Human Resources</a></li>
+                        <li><a href="">Project Management</a></li>
+                        <li><a href="">Quality Assurance / Control</a></li>
+                    </ul>
+                </div>
+                <div class="fields-col" id="fields-col4">
+                    <img src="./image/IT.jpg" alt="IT engineer">
+                    <h3>Computer Engineer</h3>
+                </div>
+                <div class="course-list" id="course-list4">
+                    <ul>
+                        <li><a href="">Applications</a></li>
+                        <li><a href="">Gaming</a></li>
+                        <li><a href="">Networking / Communications</a></li>
+                        <li><a href="">Programmer / Analyst</a></li>
+                        <li><a href="">Repair / Maintenance</a></li>
+                        <li><a href="">Cyber Security</a></li>
+                        <li><a href="">Software Development</a></li>
+                        <li><a href="">Systems / Engineering Tech</a></li>
+                        <li><a href="">Information Management / Informatics</a></li>
+                        <li><a href="">Web - Design / Development</a></li>
+                    </ul>
+                </div>
+                <div class="fields-col" id="fields-col5">
+                    <img src="./image/engineering.jpg" alt="Engineering & Technology">
+                    <h3>Engineering & Technology</h3>
+                </div>
+                <div class="course-list" id="course-list5">
+                    <ul>
+                        <li><a href="">Architecture</a></li>
+                        <li><a href="">Chemical Production</a></li>
+                        <li><a href="">Civil Engineering Tech</a></li>
+                        <li><a href="">Drafting / Design</a></li>
+                        <li><a href="">Electronics</a></li>
+                        <li><a href="">Instrumentation / Control</a></li>
+                        <li><a href="">Research</a></li>
+                        <li><a href="">Robotics / Automation</a></li>
+                    </ul>
+                </div>
+                <div class="fields-col" id="fields-col6">
+                    <img src="./image/security.jpeg" alt="Fire, Justice & Security">
+                    <h3>Fire, Justice & Security</h3>
+                </div>
+                <div class="course-list" id="course-list6">
+                    <ul>
+                        <li><a href="">Border Services / Customs</a></li>
+                        <li><a href="">Emergency Management</a></li>
+                        <li><a href="">Firefighting / Fire Systems</a></li>
+                        <li><a href="">Forensics</a></li>
+                        <li><a href="">Law / Justice / Security</a></li>
+                        <li><a href="">Police</a></li>
+                    </ul>
+                </div>
+                <div class="fields-col" id="fields-col7">
+                    <img src="./image/doctor.jpg" alt="Doctor">
+                    <h3>Medical Courses</h3>
+                </div>
+                <div class="course-list" id="course-list7">
+                    <ul>
+                        <li><a href="">Addictions / Mental Health</a></li>
+                        <li><a href="">Biotechnology</a></li>
+                        <li><a href="">Cardiovascular</a></li>
+                        <li><a href="">Dental / Denturism</a></li>
+                        <li><a href="">Diagnostic Cytology</a></li>
+                        <li><a href="">Microbiology</a></li>
+                        <li><a href="">Nursing</a></li>
+                        <li><a href="">Orthotics / Prosthetics</a></li>
+                        <li><a href="">Paramedic</a></li>
+                        <li><a href="">Pharmaceutical</a></li>
+                        <li><a href="">Physiotherapy / Occupational Therapy / Rehabilitation</a></li>
+                    </ul>
+                </div>
+                <div class="fields-col" id="fields-col8">
+                    <img src="./image/media.jpg" alt="Media">
+                    <h3>Media</h3>
+                </div>
+                <div class="course-list" id="course-list8">
+                    <ul>
+                        <li><a href="">Broadcasting</a></li>
+                        <li><a href="">Journalism</a></li>
+                        <li><a href="">Media</a></li>
+                        <li><a href="">Publishing</a></li>
+                        <li><a href="">Radio</a></li>
+                    </ul>
+                </div>
+                <div class="fields-col" id="fields-col9">
+                    <img src="./image/travel.jpg" alt="transportation & logistics">
+                    <h3>transportation & logistics</h3>
+                </div>
+                <div class="course-list" id="course-list9">
+                    <ul>
+                        <li><a href="">Aircraft Repair / Maintenance</a></li>
+                        <li><a href="">Automotive - Mechanic / Repair</a></li>
+                        <li><a href="">Aviation - Flight</a></li>
+                        <li><a href="">Logistics</a></li>
+                        <li><a href="">Marine</a></li>
+                        <li><a href="">Motive Power</a></li>
+                        <li><a href="">Railway</a></li>
+                        <li><a href="">Truck & Coach</a></li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </form>
+
+    </section>
+
+    <!-- -------------Footer---------------- -->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>If you want to join our university please know more about us by visiting other pages of this website and
+            social media accounts.</p>
+        <p>Get the latest University news delivered to you inbox</p><br>
+        <form action="" class="footer-form">
+            <input class="mail-id" type="text" placeholder="Enter Your Email-id">
+            <input class="visit-btn red-btn" type="submit" placeholder="Subscribe">
+        </form>
+        <br>
+        <div class="icons">
+            <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+            <a href="https://twitter.com/i/flow/login"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+            <a href="home.html"><i class="fa fa-university"></i></a>
+        </div>
+        <br><br>
+        <p class="end">
+        <div>© 2024 Bliss University. All Rights Reserved</div>
+        </p>
+        <br><br><br>
+        <p class="end">THANK YOU<br>
+            <i class="fa fa-heart-o"></i>
+            <i class="fa fa-heart-o"></i>
+            <i class="fa fa-heart-o"></i>
+        </p>
+
+    </section>
+
+
+    <script src="course.js"></script>
+
+
+   
+    
+
+    <script src="courseJQ.js">
+    </script>
+
+</body>
+
+</html>

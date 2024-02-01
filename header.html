@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide Element on Outside Click</title>
+    <style>
+        /* Add your custom styles here */
+        #target-element {
+            width: 200px;
+            height: 100px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            margin-top: 20px;
+            padding: 10px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <div id="target-element">
+        Click outside this element to hide it.
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            var targetElement = $('#target-element');
+
+            $(document).on('click', function (event) {
+                // Check if the clicked element is inside the target element
+                if (!targetElement.is(event.target) && targetElement.has(event.target).length === 0) {
+                    // If not, hide the target element
+                    targetElement.hide();
+                }
+            });
+
+            // Prevent hiding if clicked inside the target element
+            targetElement.on('click', function (event) {
+                event.stopPropagation();
+            });
+        });
+    </script>
+
+</body>
+</html>

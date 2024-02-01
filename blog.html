@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOGS</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+</head>
+<body>
+     <!-- --------header section--------- -->
+    <!-- <div id="sub-header"></div> -->
+    <section class="sub-header">
+        <nav>
+            <a href="home.html"><img class="logo" src="./image/logo.jpg" alt="logo of the University"></a>
+            
+            <div class="nav-div">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="aboutus.html">About</a></li>
+                    <li><a href="course.html">Course</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        
+        </nav>
+        <div class="a-us">
+            <h1>Our Certificates & Online Courses</h1>
+        </div>
+    </section>
+     
+
+    <!-- --------------blog contain------------ -->
+
+    <section class="blog-contain">
+        <div class="rows">
+            <div class="blog-left">
+                <img src="./image/blog1.jpg" alt="">
+                <h2>Our Certificates & Online Programs</h2>
+                <p>Benefit from courses crafted by industry experts and experienced educators. Our programs provide practical insights, real-world applications, and the latest industry trends to ensure your skills are relevant and up-to-date.</p>
+                <br>
+                <p>Our online programs are designed to accommodate various schedules. Study at your own pace, access materials anytime, and engage with interactive content that caters to different learning styles.</p>
+                <br>
+                <p>Upon successful completion of our programs, receive a certificate that attests to your achievements. Our certificates are respected in the industry, showcasing your dedication to continuous learning and professional development.</p>
+
+                <div class="comment-box">
+                    <h3>Leave a Comment</h3>
+
+                    <form action="comment-form">
+                        <input type="text" placeholder="Enter Name">
+                        <input type="email" placeholder="Enter Email-id">
+                        <textarea rows="5" placeholder="Your Comment"></textarea>
+                        <button action="" type="submit" class="visit-btn red-btn">POST COMMENT</button>
+                    </form>
+
+                </div>
+
+            </div>
+            <div class="blog-right">
+                <h3>Post catagories</h3>
+                <div>
+                    <span>Business Analytics</span>
+                    <span>18</span>
+                </div>
+                <div>
+                    <span>Data Science</span>
+                    <span>34</span>
+                </div>
+                <div>
+                    <span>Machine Learning</span>
+                    <span>41</span>
+                </div>
+                <div>
+                    <span>Computer Science</span>
+                    <span>27</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- -------------Footer---------------- -->
+
+        <!-- <div id="footer-container"></div> -->
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>If you want to join our university please know more about us by visiting other pages of this website and social media accounts.</p>
+            <p>Get the latest University news delivered to you inbox</p><br>
+            <form action="" class="footer-form">
+                <input class="mail-id" type="text" placeholder="Enter Your Email-id">
+                <input class="visit-btn red-btn" type="submit" placeholder="Subscribe">
+            </form>
+            <br>
+            <div class="icons">
+                <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/i/flow/login"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+                <a href="home.html"><i class="fa fa-university"></i></a>
+            </div>
+            <br><br>
+            <p class="end"><div>© 2024 Bliss University. All Rights Reserved</div></p>
+            <br><br><br>
+            <p class="end">THANK YOU<br>
+                <i class="fa fa-heart-o"></i>
+                <i class="fa fa-heart-o"></i>
+                <i class="fa fa-heart-o"></i>
+            </p>
+    
+        </section>
+
+    <script>
+         // for small screen menubar:-
+ var navdiv = document.querySelector('.nav-div'); 
+ function showmenu(){
+     navdiv.style.right="0";
+     navdiv.style.display = "block";
+ }
+ function hidemenu(){
+     navdiv.style.right="-150px";
+     navdiv.style.display = "none";
+     
+ }
+    </script>
+   
+
+    <!-- <script src="headfoot.js"></script> -->
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact-Us</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+</head>
+<body>
+
+  <!-- --------header section--------- -->
+
+  <section class="sub-header">
+    <nav>
+        <a href="home.html"><img class="logo" src="./image/logo.jpg" alt="logo of the University"></a>
+        
+        <div class="nav-div">
+            <i class="fa fa-times" onclick="hidemenu()"></i>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="course.html">Course</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showmenu()"></i>
+    
+    </nav>
+    <div class="a-us">
+        <h1>Contact Us</h1>
+    </div>
+</section>
+
+    <!-- ----------------contact Us---------------- -->
+
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.2692495382335!2d-79.3870568!3d43.6425662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34d68bf33a9b%3A0x15edd8c4de1c7581!2sCN%20Tower!5e0!3m2!1sen!2sin!4v1706073736419!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </section>
+
+    <section class="contant-uss">
+        <div class="rows">
+            <div class="contact-coll">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>XYZ Road , ABC Building</h5>
+                        <p>Toronto, Canada</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+1 0123456789</h5>
+                        <p>Monday To Saturday,10AM to 6PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>bliss@info.com</h5>
+                        <p>Email us your query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-coll">
+                <!-- <form action="form.php" method="post"> -->
+                    <form>
+                    <input type="text" name="name" placeholder="Enter Your Name" required>
+                    <input type="email" name="email" placeholder="Enter Your Email-id" required>
+                    <input type="text" name="subject" placeholder="Enter Your Subject" required>
+                    <textarea  rows="8" name="message" placeholder="Message" required></textarea>
+                    <button type="submit" class="visit-btn red-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- -------------Footer---------------- -->
+
+        <!-- <div id="footer-container"></div> -->
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>If you want to join our university please know more about us by visiting other pages of this website and social media accounts.</p>
+            <p>Get the latest University news delivered to you inbox</p><br>
+            <form action="" class="footer-form">
+                <input class="mail-id" type="text" placeholder="Enter Your Email-id">
+                <input class="visit-btn red-btn" type="submit" placeholder="Subscribe">
+            </form>
+            <br>
+            <div class="icons">
+                <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/i/flow/login"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+                <a href="home.html"><i class="fa fa-university"></i></a>
+            </div>
+            <br><br>
+            <p class="end"><div>© 2024 Bliss University. All Rights Reserved</div></p>
+            <br><br><br>
+            <p class="end">THANK YOU<br>
+                <i class="fa fa-heart-o"></i>
+                <i class="fa fa-heart-o"></i>
+                <i class="fa fa-heart-o"></i>
+            </p>
+    
+        </section>
+
+        <script>
+            // for small screen menubar:-
+    var navdiv = document.querySelector('.nav-div'); 
+    function showmenu(){
+        navdiv.style.right="0";
+        navdiv.style.display = "block";
+    }
+    function hidemenu(){
+        navdiv.style.right="-150px";
+        navdiv.style.display = "none";
+        
+    }
+       </script>
+
+</body>
+</html>
